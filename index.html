@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhumi_Heda</title>
+    <link rel="shortcut icon" href="favicon_io (1)/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+      body {
+        font-family: 'Comfortaa', sans-serif;
+      }
+      .sparkle-bg {
+        background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        animation: sparkle 4s linear infinite;
+      }
+
+      @keyframes sparkle {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 40px 40px;
+        }
+      }
+
+      .bounce-arrow {
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-pink-100 to-purple-200 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-gradient-to-r from-pink-200 via-purple-200 to-pink-100 shadow-md">
+      <ul class="flex justify-center gap-8 py-4 text-lg font-medium text-pink-700">
+        <li><a href="#about" class="hover:text-purple-600">About</a></li>
+        <li><a href="#skills" class="hover:text-purple-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-purple-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-purple-600">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6 sparkle-bg">
+      <h1 class="text-5xl md:text-6xl font-bold text-pink-600 mb-4">Hi, I'm Bhumi Heda 💖</h1>
+      <p class="text-xl md:text-2xl text-purple-700 mb-4"><span id="typed"></span></p>
+      <p class="text-lg text-gray-700 max-w-md">A curious mind with a passion for clean code, whimsical designs, and techy adventures. Let’s sprinkle some code magic together! 🌟</p>
+      <a href="#about" class="mt-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-pink-500 bounce-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10">
+      <img src="bhumi_photo.png" alt="Bhumi Heda" class="w-60 rounded-full shadow-lg border-4 border-pink-300" />
+      <div>
+        <h2 class="text-3xl font-bold text-pink-500 mb-4">Who is Bhumi?</h2>
+        <p class="text-lg text-gray-700 max-w-xl">
+          A Computer Science student passionate about backend engineering,
+          mobile app development, and building scalable systems. Driven by clean code,
+          thoughtful design, and a touch of magic ✨.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-pink-50 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">Technical Charms 💫</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-left text-gray-800">
+        <div>
+          <h3 class="text-xl font-bold text-pink-500 mb-2">🖥 Programming</h3>
+          <ul class="list-disc list-inside">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C#, .NET</li>
+            <li>C/C++</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-purple-500 mb-2">📱 Mobile Development</h3>
+          <ul class="list-disc list-inside">
+            <li>Android (Java, Jetpack Compose)</li>
+            <li>API Integration</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-pink-500 mb-2">🌐 Web Development</h3>
+          <ul class="list-disc list-inside">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-purple-500 mb-2">🎨 Tools & Design</h3>
+          <ul class="list-disc list-inside">
+            <li>Git/GitHub</li>
+            <li>VS code</li>
+            <li>Android Studio</li>
+            <li>VirtualBox</li>
+            <li>Canva</li>
+            <li>Netlify</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-pink-500 mb-2">☁ Cloud & DevOps</h3>
+          <ul class="list-disc list-inside">
+            <li>AWS (EC2, S3) </li>
+            <li>Virtual Machine Deployment</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-purple-500 mb-2">💾 Databases & OS</h3>
+          <ul class="list-disc list-inside">
+            <li>SQL, MySQL, DBMS</li>
+            <li>Linux (Ubuntu, Red Hat), Windows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">My Work 💻</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white rounded-xl shadow-xl p-6 border-l-4 border-pink-400">
+          <h3 class="text-xl font-bold text-pink-500">Prepzy 🍽</h3>
+          <p class="text-gray-600 mt-2">
+            I developed a recipe app using Java and DBMS with a marketplace-style interface, combining a scalable backend and clean SQL design with a responsive UI built in Canva and Figma, following modular and object-oriented principles for easy maintenance.
+          </p>
+        </div>
+        <div class="bg-white rounded-xl shadow-xl p-6 border-l-4 border-purple-400">
+          <h3 class="text-xl font-bold text-purple-500">Jarvis Assistant 🎙</h3>
+          <p class="text-gray-600 mt-2">
+           Jarvis is a Python voice assistant that automates tasks, retrieves info via APIs, and uses speech recognition for smooth, natural interactions. Built with a modular, scalable architecture for easy maintenance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-pink-100 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold text-pink-600 mb-6">Let’s Connect 💌</h2>
+      <p class="text-lg">Email: <a href="mailto:Bhumiheda@gmail.com" class="text-purple-600 underline">Bhumiheda@gmail.com</a></p>
+      <p class="text-lg mt-2">LinkedIn: <a href="https://www.linkedin.com/in/bhumiheda" class="text-purple-600 underline" target="_blank">/bhumiheda</a></p>
+      <a href="bhumi_heda.pdf" class="inline-block mt-6 px-6 py-2 bg-purple-500 text-white rounded-full shadow hover:bg-purple-600 transition" target="_blank">Download Resume</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-white bg-gradient-to-r from-pink-400 to-purple-400">
+      <p>© 2025 Bhumi Heda. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      new Typed('#typed', {
+        strings: [
+           '🌐 Web Developer',
+           '📱 App Developer',
+           '🎨 Creative Coder ',
+           '💡 Tech Dreamer '
+        ],
+        typeSpeed: 55,
+        backSpeed: 30,
+        loop: true
+      });
+    </script>
+  </body>
+</html>
